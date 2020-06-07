@@ -1,0 +1,41 @@
+#bg-light {
+  background-color: #fff !important;
+}
+
+.bg-contact {
+  background-color: #fde428;
+  border-radius: 5px;
+}
+.bg-login {
+  background-color: bisque;
+  border-radius: 5px;
+}
+/* override boostrap's active css */
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgb(131, 209, 229) !important;
+}
+.nav-divider {
+  width: 0;
+  border-right: 1px solid #e3e6f0;
+  height: 2.375rem;
+  margin: auto 1rem;
+}
+.button-colour {
+  color: #000000;
+}
+.rounded-button {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 0.75rem 1rem;
+  outline: none;
+}
+.ava-size {
+  height: 2rem;
+  width: 2rem;
+}
+.icon-colour {
+  color: grey;
+}
+.login-btn-colour{
+  background-color: aliceblue;
+}

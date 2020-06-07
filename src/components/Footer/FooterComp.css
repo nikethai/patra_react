@@ -1,0 +1,13 @@
+.bg-footer{
+    background-color: black;
+}
+.align-text-center{
+    text-align: center;
+}
+.spacing{
+    margin: 0;
+    padding: 15px;
+}
+.footer-text{
+    color: whitesmoke;
+}

@@ -1,0 +1,24 @@
+.round-button {
+  border-radius: 50% !important;
+  border: 0;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-sticky {
+  position: fixed !important;
+  right: 0;
+  bottom: 10%;
+}
+.dropdown-toggle:after {
+    display: none !important;
+}
+.chatbot-box{
+    width: 500px;
+    height: 550px;
+}
+.font-big-size{
+    font-size: large !important;
+}

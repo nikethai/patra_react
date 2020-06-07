@@ -1,61 +1,30 @@
-@import '~antd/dist/antd.css';
-.App {
-  /* text-align: center; */
+html,
+body {
+  background-color: #f8f9fa !important;
+  /* overflow-x: hidden; */
 }
 
-#components-layout-demo-top-side .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px 28px 16px 0;
-  float: left;
+.no-over{
+  overflow: hidden;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   justify-content: center;
+  align-self: center;
 }
+
 .flex-container > * {
   text-align: center;
 }
+
 .flex-container > p {
   color: #61dafb;
+  text-align: center;
 }
 
-
-.ant-divider-horizontal {
-  display: -ms-flexbox;
-  display: flex;
-  clear: both;
-  width: 100%;
-  min-width: 100%;
-  margin: 2px 0;
-}
-
-.site-layout-background {
-  background: #fff;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.full-height-row {
+  height: 100vh;
 }
 
 .App-link {
