@@ -22,3 +22,8 @@
 .font-big-size{
     font-size: large !important;
 }
+.chatbot-box-inside{
+  width: 100%;
+  height: 100%;
+  /* overflow: scroll; */
+}

@@ -47,8 +47,8 @@ const NavbarComp = (props) => {
           <Navbar.Collapse id="resp-navbar" className="justify-content-end">
             <div>
               <Nav className="mx-auto">
-                <Nav.Link href="#1">Home</Nav.Link>
-                <Nav.Link href="#2">Public Workshop</Nav.Link>
+                <Nav.Link href="/test1">Home</Nav.Link>
+                <Nav.Link href="/test2">Public Workshop</Nav.Link>
                 <Nav.Link href="#3">Private Event</Nav.Link>
                 <Nav.Link href="#4">B2B Service</Nav.Link>
                 <Nav.Link href="#5">Our Scent Story</Nav.Link>
