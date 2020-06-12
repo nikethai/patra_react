@@ -1,5 +1,8 @@
 import axios from "axios";
+import { axiosBaseType } from "../axiosBase";
 
+const axiosBase = axiosBaseType("auth");
+const LoginPath = "/login";
 const config = {
   headers: {
     "Content-Type": "application/json",
@@ -11,15 +14,10 @@ export default (info) => {
     username: info.username,
     password: info.password,
   };
-  axios
-    .post(
-      `${process.env.REACT_APP_BASE_DOMAIN + process.env.REACT_APP_BASE_AUTH}`,
-      userInfo,
-      config
-    )
+  axiosBase
+    .post(`${LoginPath}`, userInfo, config)
     .then((resp) => {
-      sessionStorage.setItem("token",resp.data.token);
-      //   console.log(resp.data);
+      sessionStorage.setItem("token", resp.token);
+        // console.log(resp);
     })
-    .catch((err) => console.log(err));
 };

@@ -1,0 +1,10 @@
+.chat-box {
+    height: 510px;
+    overflow-y: scroll;
+}
+.bg-white {
+    background-color: #fff!important;
+}
+.text-small {
+    font-size: 0.9rem;
+}

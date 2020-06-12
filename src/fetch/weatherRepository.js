@@ -1,7 +1,8 @@
-import {axiosBase} from "./axiosBase";
+import { axiosBaseType } from "./axiosBase";
+
+const axiosBase = axiosBaseType("fetch");
 
 const resource = "/weatherforecast";
-
 export default {
   get() {
     return axiosBase.get(`${resource}`);

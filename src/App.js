@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Switch, Route } from "react-router-dom";
+
+import { axio } from "./fetch/axiosBase";
 import "./App.css";
 
 import Navbar from "./components/Navbar/NavbarComp";
@@ -8,8 +10,9 @@ import Footer from "./components/Footer/FooterComp";
 import BotButton from "./components/ChatBotButton/BotButton";
 import login from "./fetch/auth/Login";
 
-import Test from './components/Test';
-import Test2 from './components/Test2';
+import Test from "./components/Test";
+import Test2 from "./components/Test2";
+import Test3 from "./components/Test3/Test3";
 
 function App() {
   const loginClick = () => {
@@ -39,8 +42,9 @@ function App() {
           />
         </div> */}
         <Switch>
-          <Route exact path="/test1" component={Test}/>
-          <Route  path="/test2" component={Test2}/>
+          <Route exact path="/test1" component={() => <Test/>}  />
+          <Route path="/test2" component={Test2} />
+          <Route path="/test3" component={Test3} />
         </Switch>
         <input
           type="text"

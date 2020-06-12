@@ -19,6 +19,8 @@ import {
   NavDropdown,
 } from "react-bootstrap";
 
+import { Link } from 'react-router-dom';
+
 import "./NavbarComp.css";
 
 const NavbarComp = (props) => {
@@ -47,7 +49,7 @@ const NavbarComp = (props) => {
           <Navbar.Collapse id="resp-navbar" className="justify-content-end">
             <div>
               <Nav className="mx-auto">
-                <Nav.Link href="/test1">Home</Nav.Link>
+                <Nav.Link><Link to="/test3"> Home</Link></Nav.Link>
                 <Nav.Link href="/test2">Public Workshop</Nav.Link>
                 <Nav.Link href="#3">Private Event</Nav.Link>
                 <Nav.Link href="#4">B2B Service</Nav.Link>
