@@ -1,8 +1,9 @@
-import { axiosBaseType } from "./axiosBase";
+import { axiosBaseType } from "../axiosBase";
+import { axiosInstance } from "../axiosIntercept";
 
-const axiosBase = axiosBaseType("fetch");
+const axiosBase = axiosInstance(axiosBaseType("fetch"));
 
-const resource = "/weatherforecast";
+const resource = "/chat";
 export default {
   get() {
     return axiosBase.get(`${resource}`);

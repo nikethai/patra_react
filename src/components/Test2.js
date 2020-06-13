@@ -1,5 +1,5 @@
 import React from "react";
-import Repo from "../fetch/repositoryAPI";
+import Repo from "../fetch/repo/repositoryFactory";
 import { Spinner } from 'react-bootstrap';
 
 const WeatherRepo = Repo.get("weather");
