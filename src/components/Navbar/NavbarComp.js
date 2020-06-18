@@ -20,6 +20,7 @@ import {
 } from "react-bootstrap";
 
 import { Link } from 'react-router-dom';
+import LoginFB from '../LoginFBButton/LoginFB';
 
 import "./NavbarComp.css";
 
@@ -115,9 +116,10 @@ const NavbarComp = (props) => {
                 </div>
               ) : (
                 <div>
-                  <button className="rounded-button login-btn-colour">
+                  {/* <button className="rounded-button login-btn-colour">
                     Login
-                  </button>
+                  </button> */}
+                  <LoginFB/>
                 </div>
               )}
             </div>

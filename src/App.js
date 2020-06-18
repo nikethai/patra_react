@@ -21,6 +21,20 @@ function App() {
     login(userInfo);
   };
 
+  useEffect(() => {
+    (function (d, s, id) {
+      // Load the SDK asynchronously
+      var js,
+        fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src =
+        "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0&appId=261954274914572";
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, "script", "facebook-jssdk");
+  });
+
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
@@ -42,7 +56,7 @@ function App() {
           />
         </div> */}
         <Switch>
-          <Route exact path="/test1" component={() => <Test/>}  />
+          <Route exact path="/test1" component={() => <Test />} />
           <Route path="/test2" component={Test2} />
           <Route path="/test3" component={Test3} />
         </Switch>
