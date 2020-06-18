@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState} from "react";
 import axios from "axios";
 import { Switch, Route } from "react-router-dom";
 
-import { axio } from "./fetch/axiosBase";
+
 import "./App.css";
 
 import Navbar from "./components/Navbar/NavbarComp";
