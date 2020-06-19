@@ -10,7 +10,7 @@ export default function (props) {
         <div className="bg-light rounded py-2 px-3 mb-2">
           <p className="text-small mb-0 text-muted">{props.message}</p>
         </div>
-        <p className="small text-muted">12:00 PM | Aug 13</p>
+        <p className="small text-muted">{props.username}</p>
       </div>
     </div>
   );
